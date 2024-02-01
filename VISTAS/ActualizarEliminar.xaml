@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InchiglemaS7.VISTAS.ActualizarEliminar"
+             Title="ActualizarEliminar">
+    <VerticalStackLayout>
+        <Label 
+        Text="EDITAR ESTUDIANTE"
+        FontSize="24"
+        HorizontalOptions="Center"/>
+
+            <Label x:Name="lblCodigo" Text="Código: " />
+            <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre:"/>
+            <Entry x:Name="txtApellido" Placeholder="Ingrese el Apellido:"/>
+            <Entry x:Name="txtEdad" Placeholder="Ingrese la Edad"/>
+
+        <Button x:Name="btnActualizar"
+                Text="Actualizar"
+                    Clicked="btnActualizar_Clicked"/>
+        <Button x:Name="btnEliminar"
+                Text="Eliminar"
+                Clicked="btnEliminar_Clicked"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
